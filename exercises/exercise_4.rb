@@ -29,8 +29,8 @@ yaletown = Store.create(
 )
 
 @mens_stores = Store.where(mens_apparel: true)
-puts @mens_stores.name
-# .each |store| do
-#   puts store.name
-#   # puts store.annual_revenue
-# end
+
+@mens_stores.each do |store|
+  puts store.name
+  puts store.annual_revenue
+end
